@@ -18,6 +18,17 @@ body {
 	margin: 0 auto;
 	padding: 0 15px;
 }
+.bg {
+	position: relative;
+	& img {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+	}
+}
 
 // header
 
@@ -89,6 +100,50 @@ body {
 .main {
   flex: 1 1 auto;
 }
+.main__major-block {
+}
+.major-block {
+	position: relative;
+}
+.major-block__body {
+	padding: 184px 0 191px 0;
+	position: relative;
+	z-index: 2;
+	max-width: 509px;
+	& > *:not(:last-child) {
+		margin: 0 0 35px 0;
+	}
+}
+.major-block__container {
+
+}
+.major-block__title {
+	color: #252B42;
+	font-size: 58px;
+	font-weight: 800;
+	line-height: 80px;
+	letter-spacing: 1.37;
+}
+.major-block__text {
+	color: #737373;
+	font-size: 20px;
+	font-weight: 500;
+	line-height: 30px;
+	letter-spacing: 1.5;
+	max-width: 376px;
+}
+.major-block__buttons {
+}
+.major-block__button {
+}
+.major-block__bg{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+}
+
 
 // footer
 
