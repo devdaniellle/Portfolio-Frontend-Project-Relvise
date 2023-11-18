@@ -175,7 +175,7 @@ body {
   font-size: 58px;
   font-weight: 800;
   line-height: 80px;
-  letter-spacing: 1.37;
+  letter-spacing: 1.37px;
 }
 
 .major-block__text {
@@ -183,8 +183,51 @@ body {
   font-size: 20px;
   font-weight: 500;
   line-height: 30px;
-  letter-spacing: 1.5;
-  max-width: 376px;
+  letter-spacing: 1.5px;
+  max-width: 416px;
+}
+
+.major-block__buttons {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 28px;
+  letter-spacing: 0.2px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.major-block__buttons a :not(.button--get) {
+  text-decoration: none;
+  color: #0D5C63;
+}
+.major-block__buttons a {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+}
+
+.major-block__button {
+  text-align: center;
+  padding: 5px 36px;
+  min-height: 48px;
+  border: 1px solid #0D5C63;
+  border-radius: 37px;
+  color: #0D5C63;
+  transition: 0.2s linear;
+}
+.major-block__button:hover {
+  background: rgba(0, 0, 0, 0.062745098);
+  font-size: 16px;
+}
+
+.button--get {
+  background: #FF7B47;
+  border-radius: 37px;
+  color: #FFF;
+  border: none;
+}
+.button--get:hover {
+  background: #ea642f;
 }
 
 .major-block__bg {
@@ -193,4 +236,16 @@ body {
   height: 100%;
   top: 0;
   left: 0;
+}
+
+@media (max-width: 1350px) {
+  .major-block__bg img {
+    -o-object-position: right;
+       object-position: right;
+  }
+}
+@media (max-width: 997px) {
+  .major-block__bg {
+    opacity: 0.6;
+  }
 }/*# sourceMappingURL=style.css.map */
