@@ -4,14 +4,14 @@ body {
 	font-family: Montserrat;
 	color: #252b42;
 	font-weight: 500;
-  height: 100%;
+	height: 100%;
 }
 
 .wrapper {
 	min-height: 100%;
 	overflow: hidden;
-  display: flex;
-  flex-direction: column;
+	display: flex;
+	flex-direction: column;
 }
 ._container {
 	max-width: 1076px;
@@ -98,7 +98,7 @@ body {
 // main
 
 .main {
-  flex: 1 1 auto;
+	flex: 1 1 auto;
 }
 .main__major-block {
 }
@@ -115,10 +115,9 @@ body {
 	}
 }
 .major-block__container {
-
 }
 .major-block__title {
-	color: #252B42;
+	color: #252b42;
 	font-size: 58px;
 	font-weight: 800;
 	line-height: 80px;
@@ -140,11 +139,11 @@ body {
 	display: flex;
 	flex-wrap: wrap;
 	gap: 10px;
-	& a :not(.button--get){
+	& a :not(.button--get) {
 		text-decoration: none;
-		color: #0D5C63;
+		color: #0d5c63;
 	}
-		& a{
+	& a {
 		text-decoration: none;
 		display: flex;
 		align-items: center;
@@ -154,19 +153,19 @@ body {
 	text-align: center;
 	padding: 5px 36px;
 	min-height: 48px;
-	border: 1px solid #0D5C63;
+	border: 1px solid #0d5c63;
 	border-radius: 37px;
-	color: #0D5C63;
-	transition: .2s linear;
+	color: #0d5c63;
+	transition: 0.2s linear;
 	&:hover {
 		background: #00000010;
 		font-size: 16px;
 	}
 }
 .button--get {
-	background: #FF7B47;
+	background: #ff7b47;
 	border-radius: 37px;
-	color: #FFF;
+	color: #fff;
 	border: none;
 	&:hover {
 		background: #ea642f;
@@ -186,10 +185,40 @@ body {
 }
 @media (max-width: 997px) {
 	.major-block__bg {
-		opacity: 0.6;
+		opacity: 0.5;
+	}
+	.major-block__body {
+		padding: 125px 0 191px 0;
+	}
+}
+@media (max-width: 767px) {
+	.major-block__title {
+		font-size: 50px;
+	}
+	.major-block__text {
+		font-size: 18px;
+		max-width: 360px;
+		color: #454444;
+	}
+	.major-block__button {
+		padding: 8px 45px;
 	}
 }
 
+@media (max-width: 424px) {
+	.major-block__title {
+		font-size: 40px;
+	}
+	.major-block__text {
+		font-size: 15px;
+		max-width: 280px;
+	}
+	.major-block__button {
+		padding: 9px 47px;
+		flex: 1 1 auto;
+		justify-content: center;
+	}
+}
 
 // footer
 
