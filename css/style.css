@@ -255,6 +255,7 @@ body {
 @media (max-width: 767px) {
   .major-block__title {
     font-size: 50px;
+    line-height: 77px;
   }
   .major-block__text {
     font-size: 18px;
@@ -264,18 +265,98 @@ body {
   .major-block__button {
     padding: 8px 45px;
   }
+  .major-block__body {
+    padding: 115px 0 191px 0;
+  }
 }
 @media (max-width: 424px) {
   .major-block__title {
-    font-size: 40px;
+    font-size: 36px;
+    line-height: 60px;
   }
   .major-block__text {
-    font-size: 15px;
+    font-size: 16px;
     max-width: 280px;
+    font-weight: 600;
   }
   .major-block__button {
     padding: 9px 47px;
     flex: 1 1 auto;
     justify-content: center;
+  }
+}
+.main__services {
+  position: relative;
+  z-index: 2;
+  margin: -111px 0 0 0;
+}
+
+.services__body {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -15px;
+}
+
+.services__column {
+  padding: 0 15px;
+  flex: 0 1 30%;
+}
+
+.services__item {
+  height: 100%;
+  max-height: 150px;
+  min-width: 217px;
+  background-color: #fff;
+  box-shadow: 0px 13px 19px rgba(0, 0, 0, 0.07);
+  padding: 35px;
+  transition: 0.3s linear;
+}
+.services__item * {
+  transition: 0.3s linear;
+}
+.services__item svg {
+  margin: 0 0 10px 0;
+}
+.services__item:hover svg * {
+  fill: white;
+}
+.services__item:hover {
+  background-color: #0D5C63;
+}
+.services__item:hover .item-services__title {
+  color: #fff;
+}
+.services__item:hover .item-services__text {
+  color: #fff;
+}
+
+.item-services > *:not(:last-child) {
+  margin: 0 30px 0 0;
+}
+
+.item-services__icon {
+  margin: 0 0 10px 0;
+}
+
+.item-services__title {
+  color: #252b42;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 32px;
+  letter-spacing: 0.1px;
+}
+
+.item-services__text {
+  color: #737373;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: 0.2px;
+  margin: 10px 0 0 0;
+}
+
+@media (max-width: 1072px) {
+  .services__column {
+    margin: 0 0 20px 0;
   }
 }/*# sourceMappingURL=style.css.map */
