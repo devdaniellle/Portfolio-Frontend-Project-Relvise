@@ -459,4 +459,52 @@ body {
   .experience__item {
     min-height: 209px;
   }
+}
+.advice__body {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin: 0 -15px;
+}
+
+.advice__column {
+  background-color: #fff;
+  display: flex;
+  flex: 1;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.advice__item {
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+
+.advice__title {
+  max-width: 135px;
+  word-wrap: normal;
+  color: #252b42;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 150%;
+  letter-spacing: 0.1px;
+  margin: 0 0 19px;
+}
+
+.advice__text {
+  max-width: 180px;
+  flex: 1;
+  color: #737373;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 142.857%;
+  letter-spacing: 0.2px;
+}
+
+.advice__img {
+  display: block;
+  width: 100%;
 }/*# sourceMappingURL=style.css.map */
