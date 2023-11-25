@@ -492,6 +492,7 @@ body {
 	padding: 100px 0 0 0;
 }
 .about__container {
+	padding: 0 0 138px 0;
 }
 .about__header {
 	margin: 0 0 100px 0;
@@ -598,6 +599,33 @@ body {
 		text-align: center;
 	}
 }
+
+// clients
+
+.main__clients {
+}
+.clients {
+}
+.clients__container {
+}
+.clients__body {
+	padding: 50px 0;
+}
+.clients__items {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	gap: 20px;
+	& > * :not(:last-child) {
+		margin: 0 30px 0 0;
+	}
+}
+.client__item {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
 
 // footer
 
