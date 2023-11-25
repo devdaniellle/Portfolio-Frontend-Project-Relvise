@@ -414,8 +414,10 @@ body {
 .advice {
 }
 .advice__container {
+	margin-bottom: 80px;
 }
 .advice__header {
+	margin: 205px 0 45px 0;
 }
 .advice__body {
 	display: flex;
@@ -461,7 +463,140 @@ body {
 	display: block;
 	width: 100%;
 }
+@media (max-width: 1090px) {
+	.advice__header {
+		margin: 105px 0 45px 0;
+	}
+}
+@media (max-width: 622px) {
+	.advice__item {
+		& > * {
+			max-width: none;
+			text-align: center;
+		}
+	}
+}
 
+@media (max-width: 481px) {
+	.advice__header {
+		margin: 65px 0 45px 0;
+	}
+}
+
+// about
+
+.main__about {
+}
+.about {
+	background: #fff;
+	padding: 100px 0 0 0;
+}
+.about__container {
+}
+.about__header {
+	margin: 0 0 100px 0;
+}
+.about__body {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 120px;
+}
+.about__column {
+	flex: 1 1 50%;
+}
+.about__column--second {
+	max-width: 330px;
+}
+.about__item {
+}
+.about__video {
+	& iframe {
+		max-height: 442px;
+		width: 100%;
+		height: 100vh;
+	}
+}
+.about__inner {
+	padding: 0 0 20px 0;
+}
+.about__title {
+	color: #252b42;
+	font-size: 40px;
+	font-weight: 700;
+	line-height: 142.5%;
+	letter-spacing: 0.2px;
+}
+.about__text {
+	color: #737373;
+	font-size: 14px;
+	font-weight: 500;
+	line-height: 142.857%;
+	letter-spacing: 0.2px;
+	margin: 10px 0 0 0;
+}
+.about__outer {
+}
+.about__article {
+	margin: 30px 0 0 0;
+	display: flex;
+}
+.about__icon {
+	margin: 0 20px 0 0;
+}
+.about__info {
+	color: #737373;
+	font-size: 14px;
+	font-weight: 600;
+	line-height: 171.429%;
+	letter-spacing: 0.2px;
+	& p {
+		margin: 0 0 5px 0;
+		color: #252b42;
+		font-size: 16px;
+		font-style: normal;
+		font-weight: 700;
+		line-height: 150%;
+		letter-spacing: 0.1px;
+	}
+}
+@media (max-width: 1090px) {
+	.about {
+		padding: 60px 0 0 0;
+	}
+}
+@media (max-width: 930px) {
+	.about__column--second {
+		margin: 0 auto;
+	}
+	.about__body {
+		gap: 60px;
+	}
+}
+@media (max-width: 481px) {
+	.about__video {
+		& iframe {
+			max-height: 300px;
+			width: 100%;
+			height: 100vh;
+		}
+	}
+}
+@media (max-width: 376px) {
+	.about__video {
+		& iframe {
+			max-height: 225px;
+			width: 100%;
+			height: 100vh;
+		}
+	}
+	.about__title {
+		text-align: center;
+		font-size: 27px;
+	}
+	.about__text {
+		text-align: center;
+	}
+}
 
 // footer
 
