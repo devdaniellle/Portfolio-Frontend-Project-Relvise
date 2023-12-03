@@ -15,32 +15,32 @@
 
 <body>
   <div class="wrapper">
-    <header class="header">
+    <header id="navbar" class="header">
       <div class="header__container _container">
-        <a href="" class="header__logo">Relvise</a>
+        <div class="header__logo">Relvise</div>
         <nav class="header__menu menu">
           <ul class="menu__list">
             <li class="menu__item">
-              <a href="" class="menu__link">Home</a>
+              <a href="#major-block" class="menu__link">Home</a>
             </li>
             <li class="menu__item">
-              <a href="" class="menu__link">Product</a>
+              <a href="#product" class="menu__link">Product</a>
             </li>
             <li class="menu__item">
-              <a href="" class="menu__link">Pricing</a>
+              <a href="#experience" class="menu__link">Pricing</a>
             </li>
             <li class="menu__item">
-              <a href="" class="menu__link">Contact</a>
+              <a href="#contact" class="menu__link">Contact</a>
             </li>
           </ul>
         </nav>
         <div id="menu">
           <i class="fas fa-bars" onclick="changeIcon(this)"></i>
         </div>
-      </div>
+      </>
     </header>
     <main class="main">
-      <div class="main__major-block major-block">
+      <div id="major-block" class="main__major-block major-block">
         <div class="major-block__container _container">
           <div class="major-block__body">
             <h1 class="major-block__title">Finance and Consultancy Solution</h1>
@@ -55,7 +55,7 @@
           <img src="img\main-block\cover.jpg" alt="cover">
         </div>
       </div>
-      <section class="main__services services">
+      <section id="product" class="main__services services">
         <div class="services__container _container">
           <div class="services__body">
             <div class="services__column">
@@ -130,7 +130,7 @@
           </div>
         </div>
       </section>
-      <section class="main__experience experience">
+      <section id="experience" class="main__experience experience">
         <div class="experience__container _container">
           <div class="experience__header block-header">
             <h2 class="block-header__title">Designing Better Experience</h2>
@@ -321,7 +321,7 @@
           </div>
         </div>
       </section>
-      <section class="main__contact contact">
+      <section id="contact" class="main__contact contact">
         <div class="contact__container _container">
           <div class="contact__header block-header">
             <h2 class="block-header__title">Get In Touch</h2>

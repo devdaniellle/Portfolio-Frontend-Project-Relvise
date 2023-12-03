@@ -1,5 +1,9 @@
 @import 'nullstyle';
 
+html {
+	scroll-behavior: smooth;
+}
+
 body {
 	font-family: Montserrat;
 	color: #252b42;
@@ -79,6 +83,10 @@ body {
 	left: 0;
 	top: 0;
 	z-index: 1000;
+	&.active {
+		position: fixed;
+		background: rgba(255, 255, 255, 0.8941176471);
+	}
 }
 .header__container {
 	display: flex;
@@ -139,12 +147,11 @@ body {
 		& .menu {
 			position: absolute;
 			top: 100%;
-			left: 0;
-			width: 100%;
+			right: 0;
+			width: 50%;
 			background-color: #ffffffe4;
 			border-top: 1px solid #00000073;
-			display: none;
-			clip-path: polygon(0 0, 100% 0, 100% 0, 1% 0);
+			clip-path: polygon(100% 0, 100% 0, 100% 100%, 100% 100%);
 			transition: .6s;
 		}
 		& .menu a {
@@ -154,7 +161,7 @@ body {
 		& .menu.active {
 			clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
 			transition: .6s;
-			display: block;
+			// display: block;
 		}
 	}
 	.menu__list {
@@ -162,6 +169,7 @@ body {
 	}
 	#menu {
 		display: block;
+		z-index: 10;
 	}
 }
 @media (max-width: 480px) {
