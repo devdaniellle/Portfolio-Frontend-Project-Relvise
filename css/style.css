@@ -121,6 +121,12 @@ body {
     font-size: 27px;
   }
 }
+#menu {
+  font-size: 30px;
+  cursor: pointer;
+  display: none;
+}
+
 .header {
   position: absolute;
   width: 100%;
@@ -140,6 +146,11 @@ body {
   font-weight: 700;
   text-decoration: none;
   color: inherit;
+  transition: 0.3s linear;
+}
+.header__logo:hover {
+  text-shadow: #252B42 1px 0 1px;
+  transition: 0.3s linear;
 }
 
 .header__menu {
@@ -167,21 +178,53 @@ body {
   letter-spacing: 0.2px;
   line-height: 171%;
 }
+.menu__link:hover {
+  color: #343434;
+  text-decoration: underline;
+}
 
 @media (max-width: 1000px) {
   .header__menu {
     margin: 0 0 0 80px;
   }
 }
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   .header__menu {
-    margin: 0 0 0 40px;
+    margin: 0px;
+  }
+  .header__container {
+    justify-content: space-between;
+  }
+  .header .menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.8941176471);
+    border-top: 1px solid rgba(0, 0, 0, 0.4509803922);
+    display: none;
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 0, 1% 0);
+            clip-path: polygon(0 0, 100% 0, 100% 0, 1% 0);
+    transition: 0.6s;
+  }
+  .header .menu a {
+    display: block;
+    margin: 7px 15px;
+  }
+  .header .menu.active {
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+            clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    transition: 0.6s;
+    display: block;
+  }
+  .menu__list {
+    flex-direction: column;
+  }
+  #menu {
+    display: block;
   }
 }
 @media (max-width: 480px) {
-  .header__menu {
-    margin: 0 0 0 20px;
-  }
   .header__container {
     min-height: 65px;
   }
@@ -342,6 +385,8 @@ body {
 }
 
 .services__item {
+  text-decoration: none;
+  display: block;
   min-width: 217px;
   background-color: #fff;
   box-shadow: 0px 13px 19px rgba(0, 0, 0, 0.07);
@@ -483,6 +528,7 @@ body {
   flex: 1;
   justify-content: space-between;
   flex-direction: column;
+  padding: 0 10px;
 }
 
 .advice__item {
@@ -523,7 +569,7 @@ body {
     margin: 105px 0 45px 0;
   }
 }
-@media (max-width: 622px) {
+@media (max-width: 711px) {
   .advice__item > * {
     max-width: none;
     text-align: center;
@@ -559,8 +605,12 @@ body {
 
 .about__column--second {
   max-width: 330px;
+  padding: 0 15px;
 }
 
+.about__video {
+  padding: 0 15px;
+}
 .about__video iframe {
   max-height: 442px;
   width: 100%;
@@ -592,6 +642,7 @@ body {
 .about__article {
   margin: 30px 0 0 0;
   display: flex;
+  padding: 0 15px;
 }
 
 .about__icon {
