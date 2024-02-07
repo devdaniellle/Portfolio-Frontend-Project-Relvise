@@ -1,6 +1,6 @@
-# Site layout (Relvise)
+# Landing page (Relvise)
 
-Simple responsive site layout with burger menu (javascript).
+Simple responsive landing page with burger menu (for phones) and navigation (javascript).
 
 ## Tech stack
 
